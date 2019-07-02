@@ -30,19 +30,27 @@
             :class="{'is-active':showNav}"
           >
             <div class="navbar-start">
-              <a class="navbar-item" href="#">Home</a>
-              <a class="navbar-item" href="#">About</a>
-              <a class="navbar-item" href="#">Contacts</a>
-              <a class="navbar-item" href="#">Books</a>
+              <a class="navbar-item" href="#">
+                <router-link to="/" class="has-text-white">HOME</router-link>
+              </a>
+              <a class="navbar-item" href="#">
+                <router-link to="/about" class="has-text-white">ABOUT</router-link>
+              </a>
+              <a class="navbar-item" href="#">
+                <router-link to="/contact" class="has-text-white">CONTACTS</router-link>
+              </a>
+              <a class="navbar-item" href="#">
+                <router-link to="/books" class="has-text-white">BOOKS</router-link>
+              </a>
               <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link" href="#">Account</a>
+                <a class="navbar-link" href="#">ACCOUNT</a>
                 <div class="navbar-dropdown is-boxed">
                   <div class="navbar-menu">
                     <div class="navbar-end">
                       <b-dropdown position="is-bottom-right" aria-role="menu">
                         <a class="navbar-item" slot="trigger" role="button">
                           <span class="has-text-dark">
-                            <strong>Login</strong>
+                           <strong><i class="fas fa-sign-in-alt"></i>Login</strong>
                             <strong class="is-invisible">hi</strong>
                           </span>
                           <b-icon icon="menu-down"></b-icon>
@@ -79,7 +87,7 @@
                       <b-dropdown position="is-bottom-right" aria-role="menu">
                         <a class="navbar-item" slot="trigger" role="button">
                           <span class="has-text-dark">
-                            <strong>Register</strong>
+                            <strong><i class="fas fa-user-plus">Register</i></strong>
                           </span>
                           <b-icon icon="menu-down"></b-icon>
                         </a>
@@ -149,7 +157,7 @@
                 <div class="tile is-parent is-vertical">
                   <article class="tile is-child box">
                     <img
-                      src="../../public/ibimg.jpg"
+                      src="../../public/img2.jpg"
                       alt="Bulma: a modern CSS framework based on Flexbox"
                       width="2000"
                       height="3000"
@@ -171,16 +179,16 @@
                 <a>Overview</a>
               </li>
               <li>
-                <a>Modifiers</a>
+                <a>Books</a>
               </li>
               <li>
-                <a>Grid</a>
+                <a>Journals</a>
               </li>
               <li>
-                <a>Elements</a>
+                <a>Novels</a>
               </li>
               <li>
-                <a>Components</a>
+                <a>Timings</a>
               </li>
               <li>
                 <a>Layout</a>
